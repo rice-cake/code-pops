@@ -1,8 +1,6 @@
 This repo. contains code written in response to leetcode problems.
 
-A peeked tag indicates code is written after looking at the provided solution.
+Languages: C/C++, mySQL, Python.
 
-----------------
-Issues:
-SQL not recognized as programming language by github?
+A peeked tag indicates code is written after looking at the provided solution.
 
