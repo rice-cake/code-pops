@@ -28,27 +28,21 @@ Your output is the whole Person table after executing your sql. Use delete state
 
 My solution (requires mySQL 8):
 
-# selects rows with smallest Id
- for each distinct Email
+# selects rows with smallest Id for each distinct Email
 # requires Id to be primary key, otherwise use min(Id)
 
-with my_tmp as 
-(select Id from Person group by Email)
- 
+with my_tmp as (select Id from Person group by Email)
 delete from Person
-
 where Id not in (select Id from my_tmp) ;
-
 
 -----------------------------
 
 Posted solution (I found most understandable):
 
 delete from Person
-
 where id not in (select min(p.id) from 
 			(select * from Person) as p 
-												group by p.Email);
+				group by p.Email);
 
 
 
