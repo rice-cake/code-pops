@@ -1,5 +1,3 @@
-Classes More Than 5 Students
-
 Problem 596 (Easy): 
 
 create table If Not Exists Courses (student varchar(255), class varchar(255));
