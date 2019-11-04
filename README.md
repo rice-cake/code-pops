@@ -1,4 +1,4 @@
-This repo. contains code written in response to leetcode problems.
+This repo. contains my solutions to leetcode problems.
 
 Languages: C/C++, mySQL, Python3.
 
